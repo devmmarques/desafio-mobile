@@ -20,6 +20,14 @@
 		B2694B2B2220E4DC00BC5392 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B2A2220E4DC00BC5392 /* Images.swift */; };
 		B2694B2D2220E6BD00BC5392 /* Variations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B2C2220E6BD00BC5392 /* Variations.swift */; };
 		B2694B2F2220E7C700BC5392 /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B2E2220E7C700BC5392 /* Reference.swift */; };
+		B2694B392220FEF300BC5392 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B382220FEF300BC5392 /* APIRouter.swift */; };
+		B2694B3B2220FF2000BC5392 /* EnvironmentConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B3A2220FF2000BC5392 /* EnvironmentConfig.swift */; };
+		B2694B3D2221018100BC5392 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B3C2221018100BC5392 /* APIResult.swift */; };
+		B2694B3F2221035E00BC5392 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B3E2221035D00BC5392 /* APIError.swift */; };
+		B2694B41222104B700BC5392 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B40222104B700BC5392 /* APIClient.swift */; };
+		B2694B43222104E800BC5392 /* APIClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B42222104E800BC5392 /* APIClientProtocol.swift */; };
+		B2C9DEFB22216F710002B909 /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9DEFA22216F710002B909 /* Codable+Extensions.swift */; };
+		B2C9DEFD22216FE50002B909 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C9DEFC22216FE50002B909 /* DateFormatter+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +67,14 @@
 		B2694B2A2220E4DC00BC5392 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		B2694B2C2220E6BD00BC5392 /* Variations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Variations.swift; sourceTree = "<group>"; };
 		B2694B2E2220E7C700BC5392 /* Reference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reference.swift; sourceTree = "<group>"; };
+		B2694B382220FEF300BC5392 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
+		B2694B3A2220FF2000BC5392 /* EnvironmentConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnvironmentConfig.swift; sourceTree = "<group>"; };
+		B2694B3C2221018100BC5392 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		B2694B3E2221035D00BC5392 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		B2694B40222104B700BC5392 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		B2694B42222104E800BC5392 /* APIClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClientProtocol.swift; sourceTree = "<group>"; };
+		B2C9DEFA22216F710002B909 /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
+		B2C9DEFC22216FE50002B909 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +188,8 @@
 		B2694B222220E13A00BC5392 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				B2C9DEF922216F580002B909 /* Extensions */,
+				B2694B3A2220FF2000BC5392 /* EnvironmentConfig.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -179,8 +197,30 @@
 		B2694B232220E15E00BC5392 /* APIClient */ = {
 			isa = PBXGroup;
 			children = (
+				B2694B372220FEED00BC5392 /* Core */,
 			);
 			path = APIClient;
+			sourceTree = "<group>";
+		};
+		B2694B372220FEED00BC5392 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B2694B382220FEF300BC5392 /* APIRouter.swift */,
+				B2694B3C2221018100BC5392 /* APIResult.swift */,
+				B2694B3E2221035D00BC5392 /* APIError.swift */,
+				B2694B40222104B700BC5392 /* APIClient.swift */,
+				B2694B42222104E800BC5392 /* APIClientProtocol.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B2C9DEF922216F580002B909 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2C9DEFA22216F710002B909 /* Codable+Extensions.swift */,
+				B2C9DEFC22216FE50002B909 /* DateFormatter+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,11 +355,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2694B292220E42A00BC5392 /* BestInstallment.swift in Sources */,
+				B2694B392220FEF300BC5392 /* APIRouter.swift in Sources */,
 				B2694B2F2220E7C700BC5392 /* Reference.swift in Sources */,
+				B2C9DEFB22216F710002B909 /* Codable+Extensions.swift in Sources */,
+				B2694B3D2221018100BC5392 /* APIResult.swift in Sources */,
 				B2694B2B2220E4DC00BC5392 /* Images.swift in Sources */,
+				B2C9DEFD22216FE50002B909 /* DateFormatter+Extensions.swift in Sources */,
+				B2694B43222104E800BC5392 /* APIClientProtocol.swift in Sources */,
+				B2694B3F2221035E00BC5392 /* APIError.swift in Sources */,
 				B2694AF42220DE7E00BC5392 /* ViewController.swift in Sources */,
 				B2694AF22220DE7E00BC5392 /* AppDelegate.swift in Sources */,
 				B2694B272220E3C700BC5392 /* Sellers.swift in Sources */,
+				B2694B41222104B700BC5392 /* APIClient.swift in Sources */,
+				B2694B3B2220FF2000BC5392 /* EnvironmentConfig.swift in Sources */,
 				B2694B252220E32D00BC5392 /* Product.swift in Sources */,
 				B2694B2D2220E6BD00BC5392 /* Variations.swift in Sources */,
 			);
