@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B22DBBE42221D7A700E2DC23 /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22DBBE32221D7A700E2DC23 /* Products.swift */; };
 		B22DBBE622221BE000E2DC23 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22DBBE522221BE000E2DC23 /* SearchResponse.swift */; };
+		B245F50B2222CCA4009CCE13 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F50A2222CCA4009CCE13 /* TabBarViewController.swift */; };
+		B245F50F2222CDC4009CCE13 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F50E2222CDC4009CCE13 /* UIColor+Extension.swift */; };
 		B2694AF22220DE7E00BC5392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694AF12220DE7E00BC5392 /* AppDelegate.swift */; };
 		B2694AF42220DE7E00BC5392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694AF32220DE7E00BC5392 /* ViewController.swift */; };
 		B2694AF72220DE7E00BC5392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2694AF52220DE7E00BC5392 /* Main.storyboard */; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		B22DBBE32221D7A700E2DC23 /* Products.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
 		B22DBBE522221BE000E2DC23 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
+		B245F50A2222CCA4009CCE13 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		B245F50E2222CDC4009CCE13 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		B2694AEE2220DE7E00BC5392 /* desafio-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2694AF12220DE7E00BC5392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2694AF32220DE7E00BC5392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,29 @@
 			path = Product;
 			sourceTree = "<group>";
 		};
+		B22DBBE822222DF200E2DC23 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B245F50C2222CD8A009CCE13 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				B245F50D2222CDB3009CCE13 /* UIColor */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		B245F50D2222CDB3009CCE13 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				B245F50E2222CDC4009CCE13 /* UIColor+Extension.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
 		B2694AE52220DE7E00BC5392 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +175,7 @@
 		B2694AF02220DE7E00BC5392 /* desafio-mobile */ = {
 			isa = PBXGroup;
 			children = (
+				B22DBBE822222DF200E2DC23 /* Views */,
 				B2694B222220E13A00BC5392 /* Util */,
 				B2694B212220E13000BC5392 /* Controller */,
 				B2694B202220E12300BC5392 /* Services */,
@@ -200,6 +228,7 @@
 		B2694B212220E13000BC5392 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B245F50A2222CCA4009CCE13 /* TabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,6 +236,7 @@
 		B2694B222220E13A00BC5392 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				B245F50C2222CD8A009CCE13 /* Categories */,
 				B2C9DEF922216F580002B909 /* Extensions */,
 				B2694B3A2220FF2000BC5392 /* EnvironmentConfig.swift */,
 			);
@@ -393,7 +423,9 @@
 				B2694B292220E42A00BC5392 /* BestInstallment.swift in Sources */,
 				B2694B392220FEF300BC5392 /* APIRouter.swift in Sources */,
 				B2694B2F2220E7C700BC5392 /* Reference.swift in Sources */,
+				B245F50F2222CDC4009CCE13 /* UIColor+Extension.swift in Sources */,
 				B2C9DEFB22216F710002B909 /* Codable+Extensions.swift in Sources */,
+				B245F50B2222CCA4009CCE13 /* TabBarViewController.swift in Sources */,
 				B22DBBE622221BE000E2DC23 /* SearchResponse.swift in Sources */,
 				B2694B3D2221018100BC5392 /* APIResult.swift in Sources */,
 				B2694B2B2220E4DC00BC5392 /* Images.swift in Sources */,

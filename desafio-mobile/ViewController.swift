@@ -12,7 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let apiClient = ProductService(apiClient: APIClient())
+        apiClient.fetchProduct(name: "AirFr") { (response: APIResult<SearchResponse>) in
+            switch response {
+            case let .success(value):
+                print(value)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 
 
