@@ -22,7 +22,6 @@ struct APIClient: APIClientProtocol {
         } else {
             let configuration = URLSessionConfiguration.default
             configuration.requestCachePolicy = .reloadRevalidatingCacheData
-            configuration.timeoutIntervalForRequest = 20
             configuration.httpShouldSetCookies = true
             configuration.allowsCellularAccess = true
             configuration.networkServiceType = .default

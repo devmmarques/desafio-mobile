@@ -10,14 +10,14 @@ import Foundation
 
 struct Sellers: Codable {
     
-    let id: Int
+    let id: String
     let name: String
     let quantity: Int
     let price: Double
     let listPrice: Double
     let bestInstallment: BestInstallment
     
-    init(id: Int, name: String, quantity: Int, price: Double, listPrice: Double, bestInstallment: BestInstallment) {
+    init(id: String, name: String, quantity: Int, price: Double, listPrice: Double, bestInstallment: BestInstallment) {
         self.id = id
         self.name = name
         self.quantity = quantity

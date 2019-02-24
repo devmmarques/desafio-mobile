@@ -10,7 +10,7 @@ import Foundation
 
 struct Product: Codable {
     
-    let id: Int
+    let id: String
     let name: String
     let sellers: [Sellers]
     let images: [Images]
@@ -22,7 +22,7 @@ struct Product: Codable {
     let reference: [Reference]
     let ean: String
     
-    init(id: Int, name: String, sellers: [Sellers], images: [Images], variations: Variations, skuName: String, unitMultiplier: Int, complementName: String, measurementUnit: String, reference: [Reference], ean: String) {
+    init(id: String, name: String, sellers: [Sellers], images: [Images], variations: Variations, skuName: String, unitMultiplier: Int, complementName: String, measurementUnit: String, reference: [Reference], ean: String) {
         self.id = id
         self.name = name
         self.sellers = sellers
@@ -46,7 +46,7 @@ struct Product: Codable {
         case unitMultiplier = "UnitMultiplier"
         case complementName = "ComplementName"
         case measurementUnit = "MeasurementUnit"
-        case reference = "Reference"
+        case reference = "ReferenceId"
         case ean = "EAN"
     }
 }
