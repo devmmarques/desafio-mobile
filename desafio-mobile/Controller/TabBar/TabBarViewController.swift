@@ -10,7 +10,7 @@ import UIKit
 
 final class TabBarViewController: UITabBarController {
     
-    let searchProducsViewController = UIViewController()
+    let searchProducsViewController = ProductNavigationViewController()
     let categoryViewController = UIViewController()
     
     override func viewDidLoad() {

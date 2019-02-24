@@ -32,4 +32,8 @@ extension UIColor {
         }
     }
     
+    struct NavigationController {
+        static let background = UIColor(hex: 0xff3300)
+    }
+    
 }

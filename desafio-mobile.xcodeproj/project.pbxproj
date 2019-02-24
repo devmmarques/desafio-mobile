@@ -11,6 +11,12 @@
 		B22DBBE622221BE000E2DC23 /* SearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22DBBE522221BE000E2DC23 /* SearchResponse.swift */; };
 		B245F50B2222CCA4009CCE13 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F50A2222CCA4009CCE13 /* TabBarViewController.swift */; };
 		B245F50F2222CDC4009CCE13 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F50E2222CDC4009CCE13 /* UIColor+Extension.swift */; };
+		B245F5122222E156009CCE13 /* Products.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B245F5112222E156009CCE13 /* Products.storyboard */; };
+		B245F5142222E1E9009CCE13 /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F5132222E1E9009CCE13 /* ProductsViewController.swift */; };
+		B245F5172222E7C1009CCE13 /* ProductNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F5162222E7C1009CCE13 /* ProductNavigationViewController.swift */; };
+		B245F51A2222E887009CCE13 /* StoryboardUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F5192222E887009CCE13 /* StoryboardUtil.swift */; };
+		B245F51D2222F01C009CCE13 /* ProductViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F51C2222F01C009CCE13 /* ProductViewCell.swift */; };
+		B245F5212222F14F009CCE13 /* AppearanceTabBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F5202222F14F009CCE13 /* AppearanceTabBarHelper.swift */; };
 		B2694AF22220DE7E00BC5392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694AF12220DE7E00BC5392 /* AppDelegate.swift */; };
 		B2694AF42220DE7E00BC5392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694AF32220DE7E00BC5392 /* ViewController.swift */; };
 		B2694AF72220DE7E00BC5392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2694AF52220DE7E00BC5392 /* Main.storyboard */; };
@@ -58,6 +64,12 @@
 		B22DBBE522221BE000E2DC23 /* SearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponse.swift; sourceTree = "<group>"; };
 		B245F50A2222CCA4009CCE13 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B245F50E2222CDC4009CCE13 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		B245F5112222E156009CCE13 /* Products.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Products.storyboard; sourceTree = "<group>"; };
+		B245F5132222E1E9009CCE13 /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		B245F5162222E7C1009CCE13 /* ProductNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductNavigationViewController.swift; sourceTree = "<group>"; };
+		B245F5192222E887009CCE13 /* StoryboardUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardUtil.swift; sourceTree = "<group>"; };
+		B245F51C2222F01C009CCE13 /* ProductViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewCell.swift; sourceTree = "<group>"; };
+		B245F5202222F14F009CCE13 /* AppearanceTabBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceTabBarHelper.swift; sourceTree = "<group>"; };
 		B2694AEE2220DE7E00BC5392 /* desafio-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2694AF12220DE7E00BC5392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B2694AF32220DE7E00BC5392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +144,7 @@
 		B22DBBE822222DF200E2DC23 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B245F5112222E156009CCE13 /* Products.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -150,6 +163,56 @@
 				B245F50E2222CDC4009CCE13 /* UIColor+Extension.swift */,
 			);
 			path = UIColor;
+			sourceTree = "<group>";
+		};
+		B245F5102222E13C009CCE13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B245F51B2222F003009CCE13 /* View */,
+				B245F5132222E1E9009CCE13 /* ProductsViewController.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		B245F5152222E799009CCE13 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B245F5162222E7C1009CCE13 /* ProductNavigationViewController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B245F5182222E875009CCE13 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B245F5192222E887009CCE13 /* StoryboardUtil.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B245F51B2222F003009CCE13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B245F51C2222F01C009CCE13 /* ProductViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B245F51E2222F11C009CCE13 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B245F51F2222F12E009CCE13 /* Appearance */,
+				B245F50A2222CCA4009CCE13 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		B245F51F2222F12E009CCE13 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				B245F5202222F14F009CCE13 /* AppearanceTabBarHelper.swift */,
+			);
+			path = Appearance;
 			sourceTree = "<group>";
 		};
 		B2694AE52220DE7E00BC5392 = {
@@ -228,7 +291,9 @@
 		B2694B212220E13000BC5392 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B245F50A2222CCA4009CCE13 /* TabBarViewController.swift */,
+				B245F51E2222F11C009CCE13 /* TabBar */,
+				B245F5152222E799009CCE13 /* Navigation */,
+				B245F5102222E13C009CCE13 /* Products */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -236,6 +301,7 @@
 		B2694B222220E13A00BC5392 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				B245F5182222E875009CCE13 /* Helpers */,
 				B245F50C2222CD8A009CCE13 /* Categories */,
 				B2C9DEF922216F580002B909 /* Extensions */,
 				B2694B3A2220FF2000BC5392 /* EnvironmentConfig.swift */,
@@ -395,6 +461,7 @@
 			files = (
 				B2694AFC2220DE8000BC5392 /* LaunchScreen.storyboard in Resources */,
 				B2694AF92220DE8000BC5392 /* Assets.xcassets in Resources */,
+				B245F5122222E156009CCE13 /* Products.storyboard in Resources */,
 				B2694AF72220DE7E00BC5392 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,10 +487,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B245F5172222E7C1009CCE13 /* ProductNavigationViewController.swift in Sources */,
 				B2694B292220E42A00BC5392 /* BestInstallment.swift in Sources */,
+				B245F51A2222E887009CCE13 /* StoryboardUtil.swift in Sources */,
+				B245F5142222E1E9009CCE13 /* ProductsViewController.swift in Sources */,
 				B2694B392220FEF300BC5392 /* APIRouter.swift in Sources */,
 				B2694B2F2220E7C700BC5392 /* Reference.swift in Sources */,
 				B245F50F2222CDC4009CCE13 /* UIColor+Extension.swift in Sources */,
+				B245F5212222F14F009CCE13 /* AppearanceTabBarHelper.swift in Sources */,
 				B2C9DEFB22216F710002B909 /* Codable+Extensions.swift in Sources */,
 				B245F50B2222CCA4009CCE13 /* TabBarViewController.swift in Sources */,
 				B22DBBE622221BE000E2DC23 /* SearchResponse.swift in Sources */,
@@ -437,6 +508,7 @@
 				B2694AF22220DE7E00BC5392 /* AppDelegate.swift in Sources */,
 				B2694B272220E3C700BC5392 /* Sellers.swift in Sources */,
 				B2694B41222104B700BC5392 /* APIClient.swift in Sources */,
+				B245F51D2222F01C009CCE13 /* ProductViewCell.swift in Sources */,
 				B2694B3B2220FF2000BC5392 /* EnvironmentConfig.swift in Sources */,
 				B2694B252220E32D00BC5392 /* Product.swift in Sources */,
 				B2694B2D2220E6BD00BC5392 /* Variations.swift in Sources */,
