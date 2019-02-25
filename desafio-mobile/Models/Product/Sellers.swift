@@ -15,10 +15,10 @@ struct Sellers: Codable {
     let quantity: Int
     let price: Double
     let listPrice: Double
-    let bestInstallment: BestInstallment
+    let bestInstallment: BestInstallment?
     let offer: Int?
     
-    init(id: String, name: String, quantity: Int, price: Double, listPrice: Double, bestInstallment: BestInstallment, offer: Int = 0) {
+    init(id: String, name: String, quantity: Int, price: Double, listPrice: Double, bestInstallment: BestInstallment?, offer: Int = 0) {
         self.id = id
         self.name = name
         self.quantity = quantity

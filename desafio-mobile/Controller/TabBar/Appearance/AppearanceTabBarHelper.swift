@@ -14,7 +14,7 @@ struct AppearanceTabBarHelper {
         let navigationBarAppearace = UINavigationBar.appearance()
         navigationBarAppearace.isTranslucent = false
         navigationBarAppearace.tintColor = .white
-        navigationBarAppearace.barTintColor = UIColor.NavigationController.background
+        navigationBarAppearace.barTintColor = UIColor.redDefault
         navigationBarAppearace.shadowImage = UIImage.init()
         navigationBarAppearace.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         navigationBarAppearace.setBackgroundImage(UIImage.init(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)

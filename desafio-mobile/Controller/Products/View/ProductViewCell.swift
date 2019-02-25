@@ -36,7 +36,10 @@ final class ProductViewCell: UICollectionViewCell {
     private func configurePrice(seller: Sellers) {
         self.priceOldLabel.text = String(format: "R$%.02f", seller.price)
         self.priceLabel.text = String(format: "R$%.02f", seller.listPrice)
-        self.pricePlotsLabel.text = "\(seller.bestInstallment.count)x de \(String(format: "R$%.02f", seller.bestInstallment.value))"
+        
+        if let bestInstallment = seller.bestInstallment {
+           self.pricePlotsLabel.text = "\(bestInstallment.count)x de \(String(format: "R$%.02f", bestInstallment.value))"
+        }
         
         if let offer = seller.offer {
             self.percentOffLabel.isHidden = false

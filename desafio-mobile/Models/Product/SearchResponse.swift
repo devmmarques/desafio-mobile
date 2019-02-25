@@ -13,9 +13,9 @@ struct SearchResponse: Codable {
     let size: Int
     let total: Int
     let delay: Double
-    let products: [Products]
+    let products: [Products]?
     
-    init(size: Int, total: Int, delay: Double, products: [Products]) {
+    init(size: Int, total: Int, delay: Double, products: [Products]?) {
         self.size = size
         self.total = total
         self.delay = delay

@@ -24,5 +24,4 @@ public class ProductNavigationViewController: UINavigationController {
     override public var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
 }

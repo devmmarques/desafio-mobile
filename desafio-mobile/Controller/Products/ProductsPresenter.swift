@@ -16,6 +16,7 @@ class ProductsPresenter {
     private var currentPage = 0
     private var totalProduct = 0
     private var products: [Products] = []
+    private var nameSearch = ""
     
     init(viewProtocol: ProductsProtocol) {
         self.viewProtocol = viewProtocol
@@ -29,11 +30,21 @@ class ProductsPresenter {
             self.currentPage += 1
         }
         
-        self.serviceAPI.fetchProduct(name: name, page: currentPage) { [weak self] result in
+        if !self.isNameSearch() || !name.isEmpty {
+            self.nameSearch = name
+            self.currentPage = 0
+            self.products = []
+        }
+        
+        self.serviceAPI.fetchProduct(name: self.nameSearch, page: currentPage) { [weak self] result in
             switch result {
             case let .success(response):
                 self?.totalProduct = response.total
-                self?.products += response.products
+                
+                if let produtsResponse = response.products {
+                   self?.products += produtsResponse
+                }
+                
                 self?.viewProtocol?.dismissLoading()
                 self?.viewProtocol?.show()
             case .failure:
@@ -50,10 +61,27 @@ class ProductsPresenter {
         return self.products.count
     }
     
+    func getTotalProduct() -> Int {
+        return totalProduct
+    }
+    
     func cleanParameterRequest() {
+        self.nameSearch = ""
         self.currentPage = 0
         self.products = []
         self.totalProduct = 0
+    }
+    
+    func cleanNameSearch() {
+        nameSearch = ""
+        currentPage = 0
+    }
+    
+    func isNameSearch() -> Bool {
+        if nameSearch.isEmpty {
+            return false
+        }
+        return true
     }
     
 }
