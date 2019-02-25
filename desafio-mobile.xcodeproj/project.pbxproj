@@ -20,8 +20,6 @@
 		B245F5232222FA23009CCE13 /* Category.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B245F5222222FA23009CCE13 /* Category.storyboard */; };
 		B245F5262222FA70009CCE13 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245F5252222FA70009CCE13 /* CategoryViewController.swift */; };
 		B2694AF22220DE7E00BC5392 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694AF12220DE7E00BC5392 /* AppDelegate.swift */; };
-		B2694AF42220DE7E00BC5392 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694AF32220DE7E00BC5392 /* ViewController.swift */; };
-		B2694AF72220DE7E00BC5392 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2694AF52220DE7E00BC5392 /* Main.storyboard */; };
 		B2694AF92220DE8000BC5392 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2694AF82220DE8000BC5392 /* Assets.xcassets */; };
 		B2694AFC2220DE8000BC5392 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2694AFA2220DE8000BC5392 /* LaunchScreen.storyboard */; };
 		B2694B072220DE8000BC5392 /* desafio_mobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2694B062220DE8000BC5392 /* desafio_mobileTests.swift */; };
@@ -48,6 +46,7 @@
 		B2FF571B2223627500206416 /* ProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF571A2223627500206416 /* ProductsPresenter.swift */; };
 		B2FF571E222362DC00206416 /* ProductsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF571D222362DC00206416 /* ProductsProtocol.swift */; };
 		B2FF57202223710200206416 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF571F2223710200206416 /* UIImage+Extensions.swift */; };
+		B2FF5722222378FB00206416 /* UIAlertController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FF5721222378FB00206416 /* UIAlertController+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +81,6 @@
 		B245F5252222FA70009CCE13 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		B2694AEE2220DE7E00BC5392 /* desafio-mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2694AF12220DE7E00BC5392 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B2694AF32220DE7E00BC5392 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B2694AF62220DE7E00BC5392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B2694AF82220DE8000BC5392 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2694AFB2220DE8000BC5392 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2694AFD2220DE8000BC5392 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -115,6 +112,7 @@
 		B2FF571A2223627500206416 /* ProductsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPresenter.swift; sourceTree = "<group>"; };
 		B2FF571D222362DC00206416 /* ProductsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsProtocol.swift; sourceTree = "<group>"; };
 		B2FF571F2223710200206416 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		B2FF5721222378FB00206416 /* UIAlertController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,8 +272,6 @@
 				B2694B202220E12300BC5392 /* Services */,
 				B2694B1F2220E10F00BC5392 /* Models */,
 				B2694AF12220DE7E00BC5392 /* AppDelegate.swift */,
-				B2694AF32220DE7E00BC5392 /* ViewController.swift */,
-				B2694AF52220DE7E00BC5392 /* Main.storyboard */,
 				B2694AF82220DE8000BC5392 /* Assets.xcassets */,
 				B2694AFA2220DE8000BC5392 /* LaunchScreen.storyboard */,
 				B2694AFD2220DE8000BC5392 /* Info.plist */,
@@ -367,6 +363,7 @@
 				B2C9DEFA22216F710002B909 /* Codable+Extensions.swift */,
 				B2C9DEFC22216FE50002B909 /* DateFormatter+Extensions.swift */,
 				B2FF571F2223710200206416 /* UIImage+Extensions.swift */,
+				B2FF5721222378FB00206416 /* UIAlertController+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -520,7 +517,6 @@
 				B245F5122222E156009CCE13 /* Products.storyboard in Resources */,
 				B2CB5E872223141E00943FD9 /* ProductViewCell.xib in Resources */,
 				B245F5232222FA23009CCE13 /* Category.storyboard in Resources */,
-				B2694AF72220DE7E00BC5392 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -567,7 +563,6 @@
 				B2FF571B2223627500206416 /* ProductsPresenter.swift in Sources */,
 				B245F5262222FA70009CCE13 /* CategoryViewController.swift in Sources */,
 				B2694B3F2221035E00BC5392 /* APIError.swift in Sources */,
-				B2694AF42220DE7E00BC5392 /* ViewController.swift in Sources */,
 				B2694AF22220DE7E00BC5392 /* AppDelegate.swift in Sources */,
 				B2FF571E222362DC00206416 /* ProductsProtocol.swift in Sources */,
 				B2694B272220E3C700BC5392 /* Sellers.swift in Sources */,
@@ -575,6 +570,7 @@
 				B245F51D2222F01C009CCE13 /* ProductViewCell.swift in Sources */,
 				B2694B3B2220FF2000BC5392 /* EnvironmentConfig.swift in Sources */,
 				B2694B252220E32D00BC5392 /* Sku.swift in Sources */,
+				B2FF5722222378FB00206416 /* UIAlertController+Extension.swift in Sources */,
 				B2694B2D2220E6BD00BC5392 /* Variations.swift in Sources */,
 				B22DBBE42221D7A700E2DC23 /* Products.swift in Sources */,
 				B2C9DF032221741B0002B909 /* ProductService.swift in Sources */,
@@ -613,14 +609,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B2694AF52220DE7E00BC5392 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2694AF62220DE7E00BC5392 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B2694AFA2220DE8000BC5392 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

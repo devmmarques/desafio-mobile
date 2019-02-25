@@ -31,14 +31,12 @@ final class ProductViewCell: UICollectionViewCell {
                 self.productImage.imageFromURL(urlString: imageUrl)
             }
         }
-        
-        
     }
     
     private func configurePrice(seller: Sellers) {
-        self.priceOldLabel.text = "R$\(seller.price)"
-        self.priceLabel.text = "R$\(seller.listPrice)"
-        self.pricePlotsLabel.text = "\(seller.bestInstallment.count)x de R$\(seller.bestInstallment.value)"
+        self.priceOldLabel.text = String(format: "R$%.02f", seller.price)
+        self.priceLabel.text = String(format: "R$%.02f", seller.listPrice)
+        self.pricePlotsLabel.text = "\(seller.bestInstallment.count)x de \(String(format: "R$%.02f", seller.bestInstallment.value))"
         
         if let offer = seller.offer {
             self.percentOffLabel.isHidden = false

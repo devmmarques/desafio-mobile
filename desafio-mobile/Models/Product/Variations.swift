@@ -10,10 +10,10 @@ import Foundation
 
 struct Variations: Codable {
     
-    let voltagem: [String]
-    let cor: [String]
+    let voltagem: [String]?
+    let cor: [String]?
     
-    init(voltagem: [String], cor: [String]) {
+    init(voltagem: [String]?, cor: [String]?) {
         self.voltagem = voltagem
         self.cor = cor
     }

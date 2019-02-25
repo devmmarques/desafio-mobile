@@ -18,6 +18,15 @@ final class ProductsViewController: UIViewController {
         return presenter
     }()
     
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action:
+            #selector(self.handleRefresh(_:)),
+                                 for: UIControl.Event.valueChanged)
+        refreshControl.tintColor = UIColor.redDefault
+        
+        return refreshControl
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +34,19 @@ final class ProductsViewController: UIViewController {
         
         configureCollection()
         
-        self.presenter.fetchProducts(name: "fritadeira")
+        self.presenter.fetchProducts()
     }
     
     private func configureCollection(){
+        self.view.backgroundColor = UIColor.grayBackground
         collectionView.register(UINib(nibName: "ProductViewCell", bundle: nil), forCellWithReuseIdentifier: "ProductViewCell")
+        collectionView.addSubview(self.refreshControl)
+    }
+    
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        self.presenter.cleanParameterRequest()
+        self.presenter.fetchProducts()
+        
     }
 }
 
@@ -44,6 +61,13 @@ extension ProductsViewController: UICollectionViewDelegate, UICollectionViewData
         cell.configure(produts: self.presenter.getProduct(index: indexPath.row))
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let lastElement = self.presenter.getCountProduct() - 1
+        if indexPath.row == lastElement {
+            self.presenter.fetchProducts()
+        }
+    }
 }
 
 extension ProductsViewController: UICollectionViewDelegateFlowLayout {
@@ -56,31 +80,24 @@ extension ProductsViewController: UICollectionViewDelegateFlowLayout {
 }
 
 extension ProductsViewController: ProductsProtocol {
+    
     func show() {
+        if refreshControl.isRefreshing {
+            refreshControl.endRefreshing()
+        }
         self.collectionView.reloadData()
     }
     
     func showLoading() {
-        let alert = UIAlertController(title: nil, message: "Please wait...", preferredStyle: .alert)
-        
-        let loadingIndicator = UIActivityIndicatorView(frame: CGRect(x: 10, y: 5, width: 50, height: 50))
-        loadingIndicator.hidesWhenStopped = true
-        loadingIndicator.style = UIActivityIndicatorView.Style.gray
-        loadingIndicator.startAnimating();
-        
-        alert.view.addSubview(loadingIndicator)
-        present(alert, animated: true, completion: nil)
+        UIAlertController().loading(viewController: self)
     }
     
     func dismissLoading() {
-        dismiss(animated: true, completion: nil)
+        UIAlertController().dismissLoading(viewController: self)
     }
     
     func show(error: Error) {
         
     }
-    
-    
-    
     
 }

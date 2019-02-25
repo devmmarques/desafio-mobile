@@ -19,9 +19,13 @@ final class TabBarViewController: UITabBarController {
         
         configureAppearanceTabBar()
         configureTabBarItens()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidLoad()
         
-        searchProducsViewController.view.backgroundColor = UIColor.grayBackground
-        categoryViewController.view.backgroundColor = .gray
+        configureAppearanceTabBar()
+        configureTabBarItens()
     }
     
     private func configureAppearanceTabBar() {
@@ -51,7 +55,6 @@ final class TabBarViewController: UITabBarController {
 }
 
 extension TabBarViewController: UITabBarControllerDelegate {
-    
     
     
 }

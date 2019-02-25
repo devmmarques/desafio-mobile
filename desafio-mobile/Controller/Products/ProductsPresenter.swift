@@ -13,6 +13,8 @@ class ProductsPresenter {
     private let viewProtocol: ProductsProtocol?
     
     private let serviceAPI = ProductService(apiClient: APIClient())
+    private var currentPage = 0
+    private var totalProduct = 0
     private var products: [Products] = []
     
     init(viewProtocol: ProductsProtocol) {
@@ -20,12 +22,18 @@ class ProductsPresenter {
     }
     
     
-    func fetchProducts(name: String) {
+    func fetchProducts(_ name: String = "") {
         self.viewProtocol?.showLoading()
-        self.serviceAPI.fetchProduct(name: name) { [weak self] result in
+        
+        if self.products.count < self.totalProduct {
+            self.currentPage += 1
+        }
+        
+        self.serviceAPI.fetchProduct(name: name, page: currentPage) { [weak self] result in
             switch result {
             case let .success(response):
-                self?.products = response.products
+                self?.totalProduct = response.total
+                self?.products += response.products
                 self?.viewProtocol?.dismissLoading()
                 self?.viewProtocol?.show()
             case .failure:
@@ -35,13 +43,17 @@ class ProductsPresenter {
     }
     
     func getProduct(index: Int) -> Products {
-        return products[index]
+        return self.products[index]
     }
     
     func getCountProduct() -> Int {
-        return products.count
+        return self.products.count
     }
     
-    
+    func cleanParameterRequest() {
+        self.currentPage = 0
+        self.products = []
+        self.totalProduct = 0
+    }
     
 }

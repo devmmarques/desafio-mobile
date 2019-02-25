@@ -13,6 +13,7 @@ extension UIImageView {
         
         let activityIndicator = UIActivityIndicatorView(style: .gray)
         activityIndicator.frame = CGRect.init(x: 0, y: 0, width: self.frame.size.width, height: self.frame.size.height)
+        activityIndicator.color = UIColor.redDefault
         activityIndicator.startAnimating()
         if self.image == nil{
             self.addSubview(activityIndicator)
@@ -22,10 +23,12 @@ extension UIImageView {
             
             if error != nil {
                 print(error ?? "No Error")
+                self.image = UIImage(named: "shop-placeholder")
                 return
             }
             DispatchQueue.main.async(execute: { () -> Void in
                 let image = UIImage(data: data!)
+                activityIndicator.stopAnimating()
                 activityIndicator.removeFromSuperview()
                 self.image = image
             })

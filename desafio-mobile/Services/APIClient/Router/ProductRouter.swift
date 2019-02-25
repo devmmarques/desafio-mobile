@@ -7,23 +7,18 @@
 //
 
 enum ProductRouter {
-    case search(name: String)
+    case products(page: Int)
+    case search(name: String, page: Int)
 }
 
 extension ProductRouter: APIRouter {
     
     var path: String {
-        switch self {
-        case .search(name: _):
-            return "/Search/Criteria"
-        }
+        return "/Search/Criteria"
     }
     
     var method: NamespaceHTTPMethod {
-        switch self {
-        case .search(name: _):
-            return .post
-        }
+         return .post
     }
     
     var encoding: NamespaceParameterEncoding {
@@ -32,8 +27,10 @@ extension ProductRouter: APIRouter {
     
     var parameters: [String: Any] {
         switch self {
-        case .search(let name):
-            return ["Query": name, "Offset": 0, "Size": 10]
+        case .products(let page):
+            return ["Offset": page, "Size": 10]
+        case .search(let name, let page):
+            return ["Query": name, "Offset": page, "Size": 10]
         }
     }
     
