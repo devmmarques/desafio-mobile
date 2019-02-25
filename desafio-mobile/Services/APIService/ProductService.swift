@@ -30,7 +30,7 @@ final class ProductService: NSObject, ProductServiceProtocol {
         apiClient.request(router: router) { (response: APIResult<SearchResponse>) in
             switch response {
             case let .success(value):
-                print(value)
+                completion(.success(value))
             case let .failure(error):
                 completion(.failure(error))
             }

@@ -16,14 +16,16 @@ struct Sellers: Codable {
     let price: Double
     let listPrice: Double
     let bestInstallment: BestInstallment
+    let offer: Int?
     
-    init(id: String, name: String, quantity: Int, price: Double, listPrice: Double, bestInstallment: BestInstallment) {
+    init(id: String, name: String, quantity: Int, price: Double, listPrice: Double, bestInstallment: BestInstallment, offer: Int = 0) {
         self.id = id
         self.name = name
         self.quantity = quantity
         self.price = price
         self.listPrice = listPrice
         self.bestInstallment = bestInstallment
+        self.offer = offer
     }
     
      private enum CodingKeys: String, CodingKey {
@@ -33,5 +35,6 @@ struct Sellers: Codable {
         case price = "Price"
         case listPrice = "ListPrice"
         case bestInstallment = "BestInstallment"
+        case offer = "Offer"
     }
 }

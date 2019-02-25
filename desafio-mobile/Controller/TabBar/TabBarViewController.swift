@@ -11,7 +11,7 @@ import UIKit
 final class TabBarViewController: UITabBarController {
     
     let searchProducsViewController = ProductNavigationViewController()
-    let categoryViewController = UIViewController()
+    let categoryViewController = CategoryNavigationViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,7 +20,7 @@ final class TabBarViewController: UITabBarController {
         configureAppearanceTabBar()
         configureTabBarItens()
         
-        searchProducsViewController.view.backgroundColor = .red
+        searchProducsViewController.view.backgroundColor = UIColor.grayBackground
         categoryViewController.view.backgroundColor = .gray
     }
     

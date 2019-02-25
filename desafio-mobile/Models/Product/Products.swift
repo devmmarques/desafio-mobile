@@ -11,7 +11,7 @@ import Foundation
 struct Products: Codable {
 
     let availability: Bool
-    let skus: [Product]
+    let skus: [Sku]
     let name: String
     let id: String
     let brand: String
@@ -22,7 +22,7 @@ struct Products: Codable {
     let variations: [String]
     let realId: String
     
-    init(availability: Bool, skus: [Product], name: String, id: String, brand: String, description: String, category: String, categories: [String], specifications: [String : [String]], variations: [String], realId: String) {
+    init(availability: Bool, skus: [Sku], name: String, id: String, brand: String, description: String, category: String, categories: [String], specifications: [String : [String]], variations: [String], realId: String) {
         self.availability = availability
         self.skus = skus
         self.name = name

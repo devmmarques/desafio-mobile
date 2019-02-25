@@ -20,5 +20,10 @@ class StoryboardUtil {
         return  productViewController as! ProductsViewController
     }
     
+    static func categoryViewController() -> CategoryViewController {
+        let categoryViewController = StoryboardUtil().viewControllerWith(storeBoardName: "Category", controllerName: "CategoryViewController")
+        return  categoryViewController as! CategoryViewController
+    }
+    
     
 }

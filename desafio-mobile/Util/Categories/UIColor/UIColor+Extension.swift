@@ -23,6 +23,8 @@ extension UIColor {
 
 extension UIColor {
     
+    static let grayBackground = UIColor(hex: 0xe6e6e6)
+    
     struct NavBar {
         static let background = UIColor(hex: 0xf2f2f2)
         
@@ -34,6 +36,7 @@ extension UIColor {
     
     struct NavigationController {
         static let background = UIColor(hex: 0xff3300)
+        static let textColor = UIColor.white
     }
     
 }
