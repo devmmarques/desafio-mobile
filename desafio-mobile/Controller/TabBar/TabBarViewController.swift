@@ -43,7 +43,7 @@ final class TabBarViewController: UITabBarController {
         tabBarProduct.accessibilityIdentifier = "tabbar-product"
         searchProducsViewController.tabBarItem = tabBarProduct
         
-        let tabBarCategory = UITabBarItem(title: "Vitríne", image: UIImage(named: "iconTabCategoryGray"), tag: 1)
+        let tabBarCategory = UITabBarItem(title: "Categoria", image: UIImage(named: "iconTabCategoryGray"), tag: 1)
         tabBarCategory.imageInsets = UIEdgeInsets(top: 6, left: 6, bottom: 6, right: 6)
         tabBarCategory.accessibilityLabel = "Category"
         tabBarCategory.accessibilityIdentifier = "tabar-showcase"

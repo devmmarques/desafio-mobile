@@ -17,7 +17,7 @@ extension CategoryRouter: APIRouter {
     }
     
     var method: NamespaceHTTPMethod {
-        return .post
+        return .get
     }
     
     var encoding: NamespaceParameterEncoding {

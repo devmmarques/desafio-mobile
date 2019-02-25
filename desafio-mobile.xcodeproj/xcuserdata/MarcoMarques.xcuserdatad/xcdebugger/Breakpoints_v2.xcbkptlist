@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "desafio-mobile/Controller/Products/ProductsViewController.swift"
-            timestampString = "572797757.633162"
+            timestampString = "572800585.459831"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "97"
@@ -26,23 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "desafio-mobile/Controller/Products/ProductsPresenter.swift"
-            timestampString = "572797757.633782"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
-            landmarkName = "fetchProducts(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "desafio-mobile/Controller/Products/ProductsPresenter.swift"
-            timestampString = "572797757.63474"
+            timestampString = "572800585.4603291"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "51"
@@ -57,13 +41,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "desafio-mobile/Controller/Products/ProductsPresenter.swift"
-            timestampString = "572797757.635537"
+            filePath = "desafio-mobile/Controller/Category/CategoryPresenter.swift"
+            timestampString = "572800585.4605269"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "fetchProducts(_:)"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "fetchCategory()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,14 +57,78 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "desafio-mobile/Controller/Products/ProductsPresenter.swift"
-            timestampString = "572797757.636326"
+            filePath = "desafio-mobile/Services/APIService/CategoryService.swift"
+            timestampString = "572800585.4605761"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "fetchProducts(_:)"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchCategory(completion:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "desafio-mobile/Services/APIService/CategoryService.swift"
+            timestampString = "572800585.460621"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "fetchCategory(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "desafio-mobile/Services/APIService/CategoryService.swift"
+            timestampString = "572800667.01287"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "fetchCategory(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "desafio_mobile.CategoryService.fetchCategory(completion: (desafio_mobile.APIResult&lt;desafio_mobile.CategoryResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "desafio-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MarcoMarques/Documents/DEVELOPMENT/iOS/FullLab/desafio-mobile/desafio-mobile/Services/APIService/CategoryService.swift"
+                  timestampString = "572800667.225518"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "33">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (desafio_mobile.APIResult&lt;desafio_mobile.CategoryResponse&gt;) -&gt; () in desafio_mobile.CategoryService.fetchCategory(completion: (desafio_mobile.APIResult&lt;desafio_mobile.CategoryResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "desafio-mobile"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/MarcoMarques/Documents/DEVELOPMENT/iOS/FullLab/desafio-mobile/desafio-mobile/Services/APIService/CategoryService.swift"
+                  timestampString = "572800667.227231"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "55">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
